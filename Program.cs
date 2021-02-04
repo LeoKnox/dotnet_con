@@ -10,6 +10,8 @@ namespace consoleapp
             var text = Console.ReadLine();
             var date = DateTime.Now;
             Console.WriteLine($"\nYou wrote {text} in the consle.");
+            string literal_string = @"This is a path: c:\Windows\System32";
+            Console.WriteLine(literal_string);
         }
     }
 }
