@@ -9,7 +9,7 @@ namespace consoleapp
             Console.WriteLine("\nWrite some text! ");
             var text = Console.ReadLine();
             var date = DateTime.Now;
-            Console.WriteLine((text == "text" || text == "Text") ? "Unoriginal write something else" : $"\nYou wrote {text} in the consle.");
+            Console.WriteLine((text == "text" || text == "Text") ? $"Unoriginal writing {text}. Write something else" : $"\nYou wrote {text} in the consle.");
             string literal_string = @"This is a path: c:\Windows\System32";
             Console.WriteLine(literal_string);
         }
