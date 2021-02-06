@@ -10,9 +10,9 @@ namespace AdvDotNet.Controllers
             return "This is the beginning of an adventure...";
         }
 
-        public string Welcome()
+        public string Welcome(string name, int ID=1)
         {
-            return "Welcome to an adventure...";
+            return HtmlEncoder.Default.Encode($"Welcome {name}, you are level {ID}");
         }
     }
 }
