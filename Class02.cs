@@ -11,6 +11,7 @@ public class Program
 		public int Atk { get; set; }
 		public int HP { get; set; }
 	}
+	
 	public static void Main()
 	{
 		char_Class[] partyArray = { 
@@ -19,4 +20,17 @@ public class Program
 			new char_Class() { CharID = 3, Name = "Ynzon", Level = 18, Atk = 12, HP = 54 }
         };
 	}
+	
+	char_Class[] chars = new char_Class[10];
+
+        int i = 0;
+
+        foreach (char_Class member in partyArray)
+        {
+            if (member.Atk > 12 && member.Atk < 20)
+            {
+                party[i] = member;
+                i++;
+            }
+        }
 }
