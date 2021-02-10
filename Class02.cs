@@ -18,19 +18,20 @@ public class Program
             new char_Class() { CharID = 1, Name = "Aelien", Level = 18, Atk = 17, HP = 34 },
 			new char_Class() { CharID = 2, Name = "Eveehi", Level = 18, Atk = 23, HP = 28 },
 			new char_Class() { CharID = 3, Name = "Ynzon", Level = 18, Atk = 12, HP = 54 }
-        };
-	}
+		};
 	
-	char_Class[] chars = new char_Class[10];
+		char_Class[] party = new char_Class[10];
 
-        int i = 0;
+        	int i = 0;
 
-        foreach (char_Class member in partyArray)
-        {
-            if (member.Atk > 12 && member.Atk < 20)
-            {
-                party[i] = member;
-                i++;
-            }
-        }
+        	foreach (char_Class member in partyArray)
+        	{
+            	if (member.Atk > 12 && member.Atk < 20)
+            	{
+                	party[i] = member;
+                	i++;
+            	}
+        	}
+			Console.WriteLine(party[0].Name);
+	}
 }
